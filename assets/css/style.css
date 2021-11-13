@@ -1,0 +1,526 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+#main{
+    width: 100%;
+}
+
+.white-text{
+    color: #fff !important;
+}
+
+.row{
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+.row-contact{
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.col{
+    float: left;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-haf{
+    width: 50%;
+}
+.col-third{
+    width: 33.33333%;
+}
+
+
+
+
+
+/* ============HEADER============ */
+#header{
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header .header-nav{
+    display: inline-block;
+}
+
+#header .header-nav li{
+    list-style-type: none;
+    position: relative;
+}
+
+#header .header-nav > li{
+    float: left;
+}
+
+#header .header-nav  li  a{
+    text-decoration: none; 
+    display: block;
+}
+
+#header .header-nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 24px;
+    line-height: 47px;
+}
+
+#header .header-subnav{
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#header .header-subnav li {
+    width: 160px;
+}
+
+#header .header-subnav li a {
+    color: #000;
+    line-height: 39px;
+    padding: 0px 16px;
+    width: 100%;
+}
+
+#header .header-arrow{
+    font-size: 10px;
+}
+
+#header .header-search{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-icon{
+    color: #fff;
+    line-height: 46.4px;
+    font-size: 20px;
+}
+
+.mobile-menu-btn{
+    padding: 0 24px;
+    line-height: 46.4px;
+    color: #fff;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-btn{
+    font-size: 15px;
+}
+
+/* -------Hover-------- */
+#header .header-subnav > li:hover a,
+#header .header-nav > li:hover > a{
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .more:hover .header-subnav{
+    display: block;
+}
+
+#header .header-search:hover{
+    cursor: pointer;
+    background-color: red;
+    display: block;
+}
+
+#header .mobile-menu-btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+
+/* ++++++++++++++++++++++++++++++ */
+
+
+/* ============SLIDER============ */
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/sliderimg/ny.jpg') top center/ cover no-repeat;
+}
+
+#slider .slider-content{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 32px 16px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 0 1px #000;
+}
+
+#slider .slider-heading{
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+#slider .slider-description{
+    margin: 15px 0;
+}
+
+
+/* ++++++++++++++++++++++++++++++ */
+
+
+/* ============CONTENT============ */
+#content{
+    width: 100%;
+}
+/* ============THE BAND============ */
+.content-general{
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    max-width: 100%;
+}
+
+.content-header{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 30px;
+    line-height: 44.8px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.content-sub-header{
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+#content .content-description{
+    text-align: justify;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+/* ---------------CONTENT IMG--------------- */
+#content .content-img-members-list{
+
+}
+
+#content .content-members-description{
+    text-align: center;
+}
+
+#content .content-name-members{
+    margin: 15px 0;
+    line-height: 22.4px;
+}
+
+#content .content-img-members{
+    width: 60%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+/* ---------------END CONTENT IMG--------------- */
+
+/* ============END THE BAND============ */
+
+
+/* ============TOUR DATE============ */
+
+/* ----------TOUR TICKETS---------- */
+#content .content-tour-date{
+    background-color: #000;
+}
+
+#content .content-tickets-months{
+    background-color: #fff;
+}
+
+#content .content-tickets-months li{
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style-type: none;
+    line-height: 39.4px;
+    padding: 0 16px;
+}
+
+#content .tour-tickets-sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 7px;
+    margin-left: 16px;
+}
+
+#content .tour-ticker-remain{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0 8px;
+    margin-top: 9px;
+    margin-right: 16px;
+    line-height: 22.4px;
+}
+/* ---------- END TOUR TICKETS---------- */
+
+/* ------------PLACE TOURS------------ */
+
+.content-tour-date .place-tours{
+    margin: 0 -8px;
+}
+
+.content-tour-date .place-tours-specify{
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.content-tour-date .place-tours-org{
+    width: 100%;
+    display: block;
+}
+
+.content-tour-date .about-tours{
+    background-color: #fff;
+    padding: 0 16px;
+    display: inline-block;
+}
+
+.content-tour-date .place-city-name{
+    width: 100%;
+    margin: 15px 0;
+    line-height: 22.4px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.content-tour-date .place-tour-date{
+    opacity: 0.6;
+    margin: 15px 0;
+    line-height: 22.4px;
+}
+
+.content-tour-date .place-tour-description{
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.content-tour-date .place-buy-tickets{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding:  10.5px 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+ /* --------------hover-------------- */
+.place-buy-tickets:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.place-tours-org:hover{
+    opacity: 0.6;
+}
+
+/* ------------END PLACE TOURS------------ */
+
+
+/* ++++++++++++++++++++++++++++++ */
+
+
+/* ============CONTACT============ */
+#contact{
+
+}
+
+#contact .info-company{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.info-company i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+    /* ko nên dùng margin vì có những trường hợp các icon không bằng kích thước của nhau */
+}
+
+.info-customer .form-control{
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.info-customer .contact-email-customer,
+.info-customer .contact-name-customer{
+    padding: 0 8px;
+}
+
+.email-name-customer{
+    margin: 0 -8px 8px;
+}
+
+.info-customer .send-customer{
+    background-color: #000;
+    padding: 11px 17px;
+    margin: 8px 0 16px ;
+    float: right;
+    border: none;
+    -webkit-appearance: none;
+}
+ /* --------------hover-------------- */
+.info-customer .send-customer:hover{
+    color: #000 !important;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* ++++++++++++++++++++++++++++++ */
+
+
+/*=======================MAP======================= */
+
+.map-selection img{
+    width: 100%;
+}
+
+/*=======================END MAP======================= */
+
+
+/* ============FOOTER============ */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    opacity: 0.6;
+}
+#footer .social-network{
+    font-size: 25px;
+}
+
+#footer .sub-footer{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#footer .sub-footer a{
+    color: #000;
+}
+/* ++++++++++++++++++++++++++++++ */
+
+/* responsive */
+@media only screen and (max-width: 739px){
+    .Mobile{
+        
+    }
+
+    .s-full-width,
+    .s-col-full{
+        width: 100% !important;
+    }
+    
+    #header{
+        overflow: hidden;
+    }
+    
+    #header .header-nav{
+        display: block;
+    }
+    
+    #header .header-nav > li {
+        float: none;
+    }
+    
+    #header .header-nav > li:first-child {
+        display: inline-block;
+    }
+
+    #header .header-subnav{
+        position: initial;
+    }
+    
+    #header .header-subnav li{
+        width: initial;
+    }
+
+    #header .header-subnav li a {
+        color: #fff;
+        padding: 5px 37px;
+        background-color: #333;
+    }
+
+    #header .header-search{
+        display: none;
+    }
+    
+    #header .mobile-menu-btn{
+        display: block;
+    }
+    
+    .info-customer{
+        margin-top: 32px;
+    }
+
+    .contact-email-customer{
+        margin-top: 8px;
+    }
+
+    .place-buy-tickets{
+        text-align: center;
+    }
+}
+/* mobile && tablet */
+@media only screen and (max-width:1023px){
+    .content-tour-date .place-buy-tickets,
+    .info-customer .send-customer{
+        padding : 15px 17px;
+    }
+
+    .info-customer .form-control{
+        padding: 15px;
+    }
+
+    #footer .social-network i{
+        font-size: 35px;
+        margin: 0 8px;
+    }
+
+    #footer .sub-footer{
+        font-size: 23px;
+    }
+
+    #footer .sub-footer a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+    #contact .info-company{
+        line-height: 2.0;
+    }
+}
+
